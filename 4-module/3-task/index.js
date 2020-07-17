@@ -34,6 +34,7 @@ function highlight(table) {
       },
     };
   
+    // @ts-ignore
     for (const tr of table.rows) {
       Array.from(tr.cells).forEach((td, index) => {
         const fn = actions[index];
@@ -44,3 +45,4 @@ function highlight(table) {
       });
     }
   }
+  
